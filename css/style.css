@@ -11,7 +11,7 @@ html, body{
 .hatterkep{
 	width: 100%;
 	height: 100%;
-	background-image: url(../kepek/hatter.jpg);
+	background-image: url(/kepek/hatter.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
