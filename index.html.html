@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="hatterkep">
+
+<div class="menusor">
+	<a class="a active" href="#">KEZDŐLAP</a>
+	<a class="b" href="#">RÓLAM</a>
+	<a class="c" href="#">KÉPEK</a>
+	<a class="d" href="#">DOKUMENTÁCIÓ</a>
+</div>
+<div class="szoveg">
+	<div class="kezdolap">
+		<h1> Rimóczi Petra</h1>
+		<h3>BME energetikai mérnök szakos hallgató</h3>
+	</div>
+	<div class="rolam">
+		<p><b>
+			Tisztelt Olvasó, üdvözöllek a weboldalamon! </b><br>
+Rimóczi Petra vagyok, 19 éves és első éves BME hallgató. <br>
+Egy kisvárosból származom (Abony), itt végeztem el a gimnáziumot. Az egyetem választásakor sajnos nem volt könnyű dolgom, mert nem láttam magam előtt a "helyes irányt", hogy melyik szakra menjek továbbtanulni, csupán az került előtérbe, hogy reál beállítottságú legyen. <br>
+Végül az energetikai mérnök szakirányra vettek fel. Bízom benne, hogy fogom tudni teljesíteni az előttem álló akadályokat és sikeres leszek abban, amit tanulok. <br>
+		</p>
+		<p>
+			A "KÉPEK" menügomb-ot megnyomva, láthatsz rólam pár képet, talán nem "megszokott" formában. <br>
+Körülbelül 2 évvel ezelőtt jött az ötlet, hogy elkezdjek az otthon édesapám által kialakított edzőteremben súlyzós edzést végezni. Másfél évig szorgalmasan sportoltam, aminek meg is lett az eredménye. A testsúlyom növekedett, erősebb lettem, önbizalmam gyarapodott és természetesen a közérzetem és egészségem is javulásnak indult. <br>
+Sajnos közbe szólt a derékfájdalom, így fél évig szüneteltettem a mozgást. <br>
+Jelenleg gyógytorna mellett újra neki kezdtem a konditermet látogatni, mégpedig a BME Sportközpontban. Lassan, de biztosan haladok a célom felé újra. <br>
+Szeretném, ha a szenvedélyem később komolyabb utakra is térne, például fitness versenyek vagy konditeremben diákmunkát végezni. <br>
+		</p>
+		</div>
+		<div class="kepek">
+		<div class="kep">
+				<img src="kepek/3.jpg"> 
+		</div>
+		<div class="kep">
+				<img src="kepek/4.jpg"> 
+		</div>
+		<div class="kep">
+				<img src="kepek/5.jpg"> 
+		</div>
+</div>
+	<div class="dokumentacio">
+		<div class="terv">
+				<img src="kepek/dok1.png">
+		</div>
+		<div class="terv">
+				<img src="kepek/dok2.png">
+		</div>
+		<div class="terv">
+				<img src="kepek/dok3.png">	
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			 var selected = $(this);
+			 $('a').removeClass('active');
+			 $(selected).addClass('active');
+		});
+		
+		var $a = $('.a'),
+		$b = $('.b'),
+  	$c = $('.c'),
+  	$d = $('.d'),
+  	$kezdolap = $('.kezdolap'),
+  	$rolam = $('.rolam'),
+  	$kepek = $('.kepek'),
+  	$dokumentacio = $('.dokumentacio');
+
+
+  	$a.click(function(){
+  			$kezdolap.fadeIn();
+  			$rolam.fadeOut();
+  			$kepek.fadeOut();
+  			$dokumentacio.fadeOut();
+  	});
+  	$b.click(function(){
+  		  $rolam.fadeIn();
+				$kezdolap.fadeOut();
+				$kepek.fadeOut();
+  			$dokumentacio.fadeOut();
+  	});
+  	$c.click(function(){
+  			$kepek.fadeIn();
+  			$rolam.fadeOut();
+  			$kezdolap.fadeOut();
+  			$dokumentacio.fadeOut();
+  	});
+  	$d.click(function(){
+  			$dokumentacio.fadeIn();
+  			$kepek.fadeOut();
+  			$kezdolap.fadeOut();
+  			$rolam.fadeOut();
+  	});
+  });
+</script>
+
+<div class="dokumentacio">
+	<p>
+		A feladat végre hajtása során a legnagyobb nehézséget az okozta, hogy eddig semmi ismeretem nem volt ebben a témában, és rengeteg időt vett el az, hogy interneten különböző forrásokból utánna nézzek. <br>
+A látott vázlatomhoz ragaszkodtam, nem változtattam az alap koncepción. <br>
+Segédanyagok: <br>
+- https://www.youtube.com/channel/UCwDAaXTHGZBO1II0N2oRWrQ <br>
+- https://www.youtube.com/channel/UCUjZxlSrdPnhn8EEPwptHsw <br>
+- https://www.youtube.com/channel/UCWCcoBXOXpNMg0p8Qrn2l0g <br>
+- https://www.w3schools.com/html/html_css.asp <br>
+Elérhetőségeim: <br>
+email: rimoczipetra0201@gmail.com <br>
+instagram: @rmcz_petra <br>
+	</p>
+</div>
+
+</body>
+</html>
